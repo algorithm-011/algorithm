@@ -1,4 +1,5 @@
 .DS_Store
+*.swp
 
 # Fortran module files
 *.mod
