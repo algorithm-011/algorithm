@@ -1,7 +1,13 @@
 # punkyoon
 
-## WEEK1
+## WEEK1 (18.3.12 ~ 18.3.18)
 
-## WEEK2
 
-## WEEK3
+[x] 피보나치 수 + Pisano Period
+[x] 소수(prime number) 구하기
+[ ] 이항계수
+[ ] 최대공약수 / 최소공배수 + 유클리드
+[ ] 순열과 조합
+[ ] 오일러 φ 함수
+[ ] Catalan number
+
