@@ -290,3 +290,65 @@ int main(void)
     return 0;
 }
 ```
+
+# 오일러 φ 함수
+
+## 참고 자료
+
+1. https://en.wikipedia.org/wiki/Euler%27s_totient_function
+2. https://ko.khanacademy.org/computing/computer-science/cryptography/modern-crypt/v/euler-s-totient-function-phi-function
+
+## 정의
+
+(오일러 파이함수)
+
+1부터 n까지의 양의 정수 중에서 n과 서로소인 것의 개수를 나타내는 함수. φ(n)으로 표기한다.
+
+소수 p의 경우 오일러 파이 함수의 값은 다음과 같이 정의 된다.
+
+![euler's phi function](https://wikimedia.org/api/rest_v1/media/math/render/svg/9f222be570dc2170ecd7c23259f90ab6e0247330)
+
+**예시**
+
+`n = 1`인 경우, `φ(n) = 1`
+`n = 10`인 경우, `φ(n) = 4` (1, 3, 7, 9)
+
+## 구현
+
+```cpp
+nclude <iostream>
+
+using namespace std;
+
+int euler(int n)
+{
+    int p_cnt = 0;
+    int cnt = 1;
+
+    while(cnt <= n)
+    {
+        int m = n, d = cnt;
+
+        while(m != 0)
+        {
+            int temp = d;
+            d = m;
+            m = temp % m;
+        }
+
+        if(d == 1)
+            p_cnt++;
+        cnt++;
+    }
+
+    return p_cnt;
+}
+
+int main(void)
+{
+    cout << euler(1) << endl;
+    cout << euler(10) << endl;
+
+    return 0;
+}
+```
