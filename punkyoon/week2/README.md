@@ -212,9 +212,12 @@ int n = 0;
 
 void push(int data);
 int pop(void);
+
 void upheap(int idx);
 void downheap();
-void sort(int arr[], int size);
+
+void heap_sort(int arr[], int size);
+void print(int arr[], int size);
 
 void push(int data)
 {
@@ -260,7 +263,7 @@ void downheap(void)
     heap[i] = val;
 }
 
-void sort(int arr[], int size)
+void heap_sort(int arr[], int size)
 {
     int i;
     for(i=0; i<size; i++)
@@ -268,6 +271,14 @@ void sort(int arr[], int size)
         arr[i] = pop();
         printf("%d: %d\n", i+1, arr[i]);
     }
+}
+
+void print(int arr[], int size)
+{
+    int i;
+    for(i=0; i<size; i++)
+        printf("%d ", arr[i]);
+    printf("\n");
 }
 
 int main(void)
@@ -280,19 +291,13 @@ int main(void)
     for(i=0; i<size; i++)
         push(arr[i]);
 
-    // heap arr
-    printf("===== HEAP\n");
-    for(i=0; i<size; i++)
-        printf("%d ", heap[i]);
-    printf("\n");
+    printf("===== Before\n");
+    print(arr, size);
 
-    sort(arr, size);    // heap sort
+    heap_sort(arr, size);
 
-    // sorted arr
-    printf("===== RESULT\n");
-    for(i=0; i<size; i++)
-        printf("%d ", arr[i]);
-    printf("\n");
+    printf("===== After\n");
+    print(arr, size);
 
     free(heap);
     return 0;
