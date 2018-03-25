@@ -300,7 +300,7 @@ int main(void)
 
 ## 정의
 
-(오일러 파이함수)
+> 오일러 파이함수
 
 1부터 n까지의 양의 정수 중에서 n과 서로소인 것의 개수를 나타내는 함수. φ(n)으로 표기한다.
 
@@ -316,7 +316,7 @@ int main(void)
 ## 구현
 
 ```cpp
-nclude <iostream>
+#include <iostream>
 
 using namespace std;
 
