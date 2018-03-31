@@ -19,3 +19,10 @@
 - [ ] Bucket Sort
 - [ ] Quick Sort
 - [ ] Merge Sort
+
+## WEEK3 (18.3.26 ~ 18.4.1)
+
+- [x] KMP
+- [ ] Trie
+- [ ] Aho-corasick
+- [ ] Rabin-Karp
