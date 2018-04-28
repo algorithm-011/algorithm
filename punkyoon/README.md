@@ -29,8 +29,8 @@
 
 ## WEEK4 (18.4.2 ~ 18.4.8)
 
-- [ ] Linear Search 
-- [ ] Binary Search
+- [x] Linear Search 
+- [x] Binary Search
 - [ ] Parametric Search
 
 ## WEEK5 (18.4.30 ~ 18.5.6)
