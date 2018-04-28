@@ -23,6 +23,16 @@
 ## WEEK3 (18.3.26 ~ 18.4.1)
 
 - [x] KMP
-- [ ] Trie
+- [x] Trie
 - [ ] Aho-corasick
 - [ ] Rabin-Karp
+
+## WEEK4 (18.4.2 ~ 18.4.8)
+
+- [ ] Linear Search 
+- [ ] Binary Search
+- [ ] Parametric Search
+
+## WEEK5 (18.4.30 ~ 18.5.6)
+
+- [ ] Dynamic Programming

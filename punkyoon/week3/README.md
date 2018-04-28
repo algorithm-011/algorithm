@@ -114,6 +114,23 @@ int main(void)
 
 # Trie
 
+## 참고자료
+
+https://en.wikipedia.org/wiki/Trie
+
+## 내용
+
+문자열 검색을 빠르게 해주는 자료구조. 문자열의 최대 길이가 N인 경우, Trie를 이용하요 O(N) 시간안에 원하는 문자열을 검색할 수 있다.
+
+문자열 집합 (A, to, tea, ted, ten, i, in, inn)이 있을 때, Trie는 다음과 같이 구성된다.
+
+![trie example](https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Trie_example.svg/250px-Trie_example.svg.png)
+
+## 구현
+
+```c++
+```
+
 # Aho-corasick
 
 # Rabin-Karp
